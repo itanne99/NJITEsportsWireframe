@@ -84,6 +84,8 @@
 }
 .flow_shape {
 }
+.connector {
+}
 .icon {
 }
 textarea, select, input, button { outline: none; }
