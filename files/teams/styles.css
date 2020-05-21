@@ -681,7 +681,7 @@
 }
 .u68 .text {
   position:absolute;
-  align-self:flex-end;
+  align-self:center;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
@@ -745,7 +745,7 @@
   left:0px;
   top:554px;
   width:180px;
-  height:211px;
+  height:212px;
 }
 #u65-8 {
   border-width:0px;
@@ -753,7 +753,7 @@
   left:315px;
   top:554px;
   width:180px;
-  height:211px;
+  height:212px;
 }
 #u65-9 {
   border-width:0px;
@@ -769,7 +769,7 @@
   left:108px;
   top:200px;
   width:810px;
-  height:765px;
+  height:766px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
