@@ -62,7 +62,7 @@
 #u2 {
   border-width:0px;
   position:absolute;
-  left:15px;
+  left:40px;
   top:8px;
   width:89px;
   height:45px;
@@ -138,29 +138,21 @@
   position:absolute;
   left:139px;
   top:0px;
-  width:62px;
+  width:67px;
   height:23px;
 }
 #u3-3 {
   border-width:0px;
   position:absolute;
-  left:251px;
+  left:256px;
   top:0px;
-  width:56px;
+  width:53px;
   height:23px;
 }
 #u3-4 {
   border-width:0px;
   position:absolute;
-  left:357px;
-  top:0px;
-  width:53px;
-  height:23px;
-}
-#u3-5 {
-  border-width:0px;
-  position:absolute;
-  left:460px;
+  left:359px;
   top:0px;
   width:106px;
   height:23px;
@@ -168,9 +160,9 @@
 #u3 {
   border-width:0px;
   position:absolute;
-  left:1329px;
+  left:1415px;
   top:19px;
-  width:566px;
+  width:465px;
   height:23px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
