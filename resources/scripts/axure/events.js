@@ -711,7 +711,6 @@ $axure.internal(function ($ax) {
 
     // TODO: It may be a good idea to split this into multiple functions, or at least pull out more similar functions into private methods
     var _initializeObjectEvents = function(query, refreshType) {
-        var skipSelectedIds = new Set();
         query.each(function (dObj, elementId) {
             if (dObj == null) return;       // TODO: Update expo items that pass here to potentially remove this logic
             var $element = $jobj(elementId);
@@ -762,13 +761,7 @@ $axure.internal(function ($ax) {
                     if (dObj.disabled) $axElement.enabled(false);
 
                     // Initialize selected elements
-                    // only set one member of selection group selected since subsequent calls
-                    // will unselect the previous one anyway
-                    if(dObj.selected && !skipSelectedIds.has(elementId)) {
-                        var group = $('#' + elementId).attr('selectiongroup');
-                        if(group) for(var item of $("[selectiongroup='" + group + "']")) skipSelectedIds.add(item.id);
-                        $axElement.selected(true);
-                    }
+                    if(dObj.selected) $axElement.selected(true);
                 }
             } else if(refreshType == $ax.repeater.refreshType.preEval) {
                 // Otherwise everything should be set up correctly by pre-eval, want to set up selected disabled dictionaries (and disabled status)

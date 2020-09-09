@@ -115,29 +115,12 @@
     var _updateMobileScrollForWidgetShown = function(widget) {
         var isPanel = $ax.public.fn.IsDynamicPanel(widget.type);
         var isLayer = $ax.public.fn.IsLayer(widget.type);
-<<<<<<< HEAD
         if(isPanel) {
             var elementId = $id(widget);
             var stateId = $ax.repeater.applySuffixToElementId(elementId, '_state0');
             $ax.dynamicPanelManager.updateMobileScroll(elementId, stateId, true);
         } else if(isLayer) {
             for(var i = 0; i < widget.objs.length; ++i) {
-=======
-        if (isPanel) {
-            var elementId = $id(widget);
-            var stateId = $ax.repeater.applySuffixToElementId(elementId, '_state0');
-            $ax.dynamicPanelManager.updateMobileScroll(elementId, stateId, true);
-            if (!widget.diagrams) return;
-            for (var i = 0; i < widget.diagrams.length; ++i) {
-                var diagram = widget.diagrams[i];
-                if (!diagram.objects) continue;
-                for (var j = 0; j < diagram.objects.length; ++j) {
-                    _updateMobileScrollForWidgetShown(diagram.objects[j]);
-                }
-            }
-        } else if (isLayer) {
-            for (var i = 0; i < widget.objs.length; ++i) {
->>>>>>> 20b416d5de716914547dbf96401cf5998574c9c8
                 _updateMobileScrollForWidgetShown(widget.objs[i]);
             }
         }

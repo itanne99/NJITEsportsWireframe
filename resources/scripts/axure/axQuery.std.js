@@ -70,10 +70,6 @@ $axure.internal(function($ax) {
         $ax.constants.VECTOR_SHAPE_TYPE, $ax.constants.TEXT_AREA_TYPE, $ax.constants.TEXT_BOX_TYPE, $ax.constants.SNAPSHOT_TYPE
     ];
 
-    $ax.public.fn.IsSelectionButton = function(type) {
-        return type == $ax.constants.RADIO_BUTTON_TYPE || type == $ax.constants.CHECK_BOX_TYPE;
-    };
-    
     $ax.public.fn.SupportsRichText = function() {
         var obj = $obj(this.getElementIds()[0]);
         // Catch root tree nodes as they are not supported.
@@ -1301,7 +1297,7 @@ $axure.internal(function($ax) {
         var axObj = $obj(elementId);
         if (!axObj || !axObj.fixedVertical) return { valid: false };
 
-        var win = ((SAFARI && IOS) || SHARE_APP) ? $('#ios-safari-html') : $(window);
+        var win = $(window);
         var windowWidth = win.width();
         var windowHeight = win.height();
         //getting the scroll forces layout. consider caching these values.
