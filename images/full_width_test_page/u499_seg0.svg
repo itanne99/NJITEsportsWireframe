@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="885px" preserveAspectRatio="xMidYMin meet" viewBox="166 85  8 885" xmlns="http://www.w3.org/2000/svg">
   <path d="M 170 85  L 170 960  A 5 5 0 0 0 175 965 L 198 965  " stroke-width="2" stroke="#0099cc" fill="none" />
+=======
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="185px" preserveAspectRatio="xMidYMin meet" viewBox="339 225  8 185" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 343 225  L 343 400  A 5 5 0 0 0 348 405 L 371 405  " stroke-width="2" stroke="#0099cc" fill="none" />
+>>>>>>> 20b416d5de716914547dbf96401cf5998574c9c8
 </svg>
